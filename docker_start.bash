@@ -2,7 +2,6 @@ xhost +local:docker
 
 docker run -itd \
     -v `pwd`/ORB_SLAM2:/root/ORB_SLAM2 \
-    -v `pwd`/rellis_example_raw_png:/root/RELLIS_3D_example \
     -v "/media/ringo/Extreme SSD/KITTI/KITTIOdometry_data_odometry_gray":/root/KITTI \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY  \
